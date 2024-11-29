@@ -1,0 +1,5 @@
+click on Icon with css class Icon--USER jsx-3907305029
+validate LOGIN is present on the page
+highlight LOGIN is present on the page
+login with srinivas4now@gmail.com and Maruti8$1 and wait for 60 seconds
+highlight SRINIVAS NAINI is present on the page
