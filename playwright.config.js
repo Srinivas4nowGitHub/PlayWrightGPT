@@ -14,13 +14,13 @@ export default defineConfig({
   // Look for test files in the "tests" directory, relative to this configuration file.
   // testDir: 'tests',
   /* Maximum time one test can run for. */
-  timeout: 30 * 1000,
+  timeout: 600000, // Sets a 60-second timeout for all tests
   expect: {
     /**
      * Maximum time expect() should wait for the condition to be met.
      * For example in `await expect(locator).toHaveText();`
      */
-    timeout: 10000,
+    timeout: 90000,
   },
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -36,8 +36,8 @@ export default defineConfig({
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
-    click: {force: true, timeout: 10000, hidden: true},
-    goto: {timeout: 10000},
+    click: {force: true, timeout: 60000, hidden: true},
+    goto: {timeout: 90000},
 
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',

@@ -1,6 +1,6 @@
-import { test, expect } from '@playwright/test';
-import { ai } from '@zerostep/playwright'
-import { chromium } from 'playwright';
+import {test, expect} from '@playwright/test';
+import {ai} from '@zerostep/playwright';
+import {chromium} from 'playwright';
 import * as fs from 'fs/promises'; // Import the file system module for reading files
 
 // Function to read prompts from a file and execute them
@@ -15,14 +15,13 @@ async function readPromptsAndExecute(filePath: string) {
   }
 }
 
-test.describe('Eco Website Testing', () => {
+test.describe('allbirds ecommerce website Testing', () => {
   test('write prompts', async () => {
-
-    const browser = await chromium.launch({ headless: false }); // Set headless: true for headless mode
+    const browser = await chromium.launch({headless: false}); // Set headless: true for headless mode
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto('https://www.allbirds.com/');
-
+    await page.waitForLoadState('load');
     const filePath = 'prompts.txt'; // Path to the text file containing prompts
     const prompts = await readPromptsAndExecute(filePath); // Read and process prompts
     console.log('File path:', filePath);
@@ -31,7 +30,7 @@ test.describe('Eco Website Testing', () => {
 
     for (const prompt of prompts) {
       console.log(`Executing prompt: ${prompt}`);
-      await ai(prompt, { page, test }); // Execute each prompt
+      await ai(prompt, {page, test}); // Execute each prompt
     }
   });
 });

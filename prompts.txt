@@ -1,5 +1,27 @@
-click on Icon with css class Icon--USER jsx-3907305029
-validate LOGIN is present on the page
-highlight LOGIN is present on the page
-login with srinivas4now@gmail.com and Maruti8$1 and wait for 60 seconds
-highlight SRINIVAS NAINI is present on the page
+click Men from Header 
+click link Everyday Sneakers 
+scroll up page to the top
+scroll down page to Filter By
+select size button 12 in Sizes
+scroll up the page to the top
+click on BestSeller  
+scroll up page to the top
+scroll down to select size
+click size 12
+Click add to cart button
+click View Cart and Checkout button
+scroll up the page to the top
+Increase the quantity to 2
+click Proceed to check Out button
+scroll up page to the top
+enter srinivas4now@gmail.com in email 
+enter srini in first name
+enter naini in last name
+scroll down page to Address
+enter newyork in address field
+click New York,NY,USA in SUGGESTIONS 
+enter zip code as 10001
+scroll down page to Shipping method
+click Shipping method Fast Shipping Delivered in 3-6 Business Days
+click After Pay 
+click Pay Now button
